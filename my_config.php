@@ -6,10 +6,10 @@
  *
  */
 // configure enviroment / set true if it is in live server
-$PRODUCTION = false;
+$PRODUCTION = true;
 define('PRODUCTION', $PRODUCTION);
 
-$BASE_URL = (PRODUCTION) ? "http://nazishfraz.co.nf/blood_bank" : "http://localhost/nazish/blood_bank";
+$BASE_URL = (PRODUCTION) ? "https://internshala-project1.herokuapp.com" : "http://localhost/nazish/blood_bank";
 
 define('BASE_URL', $BASE_URL);
 
@@ -18,11 +18,11 @@ define('BASE_URL', $BASE_URL);
 /**
  * Configuration for database
  */
-$HOSTNAME = (PRODUCTION) ? "" : "localhost";
-$USERNAME = (PRODUCTION) ? "" : "root";
-$PASSWORD = (PRODUCTION) ? "" : "root";
-$DATABASE = (PRODUCTION) ? "" : "blood_bank";
-$PREFIX   = (PRODUCTION) ? "" : "bb_";
+$HOSTNAME = (PRODUCTION) ? "sql12.freemysqlhosting.net" : "localhost";
+$USERNAME = (PRODUCTION) ? "sql12380200" : "root";
+$PASSWORD = (PRODUCTION) ? "ssmJ2XfQbw" : "root";
+$DATABASE = (PRODUCTION) ? "sql12380200" : "blood_bank";
+$PREFIX   = (PRODUCTION) ? "bb_" : "bb_";
 
 define('HOSTNAME', $HOSTNAME);
 define('USERNAME', $USERNAME);
